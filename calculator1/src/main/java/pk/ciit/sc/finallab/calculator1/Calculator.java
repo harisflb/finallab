@@ -1,4 +1,4 @@
-package pk.ciit.sc.final1.calculator;
+package pk.ciit.sc.finallab.calculator1;
 
 public class Calculator {
 	

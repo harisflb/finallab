@@ -3,46 +3,67 @@ import org.junit.*;
 import static org.junit.Assert.*;
 
 public class TestCalculator {
-	private static Calculator calculator  = new Calculator();
-	@Test
-	public void testfindMax(){
-		int result = calculator.findMax(3,4,3);
-		assertEquals(4, result);
-	}
-	@Test
-	public void testfindMax1(){
-		int result = calculator.findMax(-1, 4,0);
-		assertEquals(3, result);
-	}
+private static Calculator calculator  = new Calculator();
 	
-	@Test
-	public void testfindMax2(){
-		int result = calculator.findMax(-1, -4,-6);
-		assertEquals(-1, result);
-	}
 	
 	@Test
 	public void square(){
-		int result = calculator.square(3);
-		assertEquals(9, result);
+	
+		assertEquals(4,calculator.square(2));
 	}
+	
+	
 	
 	@Test
 	public void square1(){
-		int result = calculator.square(-3);
-		assertEquals(9, result);
+		
+		assertEquals(9, calculator.square(-3));
 	}
+	
 	
 	@Test
 	public void cube(){
-		int result = calculator.cube(2);
-		assertEquals(8, result);
+		assertEquals(8, calculator.cube(2));
 	}
+	
 	
 	@Test
 	public void cube1(){
-		int result = calculator.cube(-2);
-		assertEquals(-8, result);
+		assertEquals(-8,calculator.cube(-2));
 	}
 
+	
+	
+	
+	@Test
+	public void testfindMax(){
+		assertEquals(4,calculator.findMax(3,4,3));
+	}
+	
+	
+	@Test
+	public void testfindMax1(){
+		assertEquals(4,calculator.findMax(1, 4,0));
+	}
+	
+	
+	
+	@Test
+	public void testfindMax2(){
+	     	
+		
+		
+		assertEquals(0, calculator.findMax(-4, -3,0));
+	}
+	
+	
+	@Test
+    public void testfindMax3(){
+	     	assertEquals(4, calculator.findMax(4,3,0));
+	}
+	
+	
+	
+	
+	
 }
